@@ -1,14 +1,9 @@
 #ifndef KITTY_H
 #define KITTY_H
 
-class Kitty
+#include "moveActions.h"
+class Kitty : MoveActions
 {
-    private:
-        int m_x;
-        int m_y;
-        
-    public:
-
 };
 
 

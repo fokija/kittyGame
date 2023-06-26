@@ -1,14 +1,17 @@
 #ifndef LEVELCREATOR_H
 #define LEVELCREATOR_H
 
-class LevelCreator
+#include "mapParameters.h"
+#include <vector>
+class LevelCreator : protected MapParameters
 {
-    private:
-        int m_width;
-        int m_height;
-        int m_obsticleAmount;
+    protected:
+        std::vector<char> areaGrid;
     public:
-        
+        void setHorizontalDimension();
+        void setVerticalDimension();
+        void createAreaGrid();
+        void displayMap();
 };
 
 
